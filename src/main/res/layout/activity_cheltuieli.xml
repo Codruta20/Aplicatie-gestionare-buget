@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Cheltuieli"
+    android:orientation="vertical">
+
+  <androidx.appcompat.widget.Toolbar
+      android:id="@+id/toolbar3"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:background="@color/app_color"
+      android:minHeight="?attr/actionBarSize"
+      android:theme="?attr/actionBarTheme">
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/btnBackC"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        app:srcCompat="@drawable/baseline_arrow_back_ios_24"
+        android:backgroundTint="#00000000"
+        app:elevation="0dp"/>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent">
+
+      <TextView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="Cheltuieli"
+          android:textColor="@color/white"
+          android:textSize="30dp"/>
+    </RelativeLayout>
+  </androidx.appcompat.widget.Toolbar>
+
+  <CalendarView
+      android:id="@+id/calendarViewCh"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content" />
+
+  <EditText
+      android:id="@+id/editSumaCh"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:ems="10"
+      android:inputType="numberDecimal"
+      android:text=""
+      android:hint="Valoare (RON)"/>
+
+  <EditText
+      android:id="@+id/editDescriereCh"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:ems="10"
+      android:inputType="text"
+      android:text=""
+      android:hint="Descriere"/>
+
+  <Spinner
+      android:id="@+id/spinner2"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content" />
+
+  <View
+      android:layout_width="match_parent"
+      android:layout_height="0dp"
+      android:layout_weight="1"/>
+
+  <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content">
+    <Button
+        android:id="@+id/btnAnuleazaCh"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="Anuleaza"
+        android:backgroundTint="@color/app_color"
+        android:layout_margin="20dp"/>
+
+    <Button
+        android:id="@+id/btnSalveazaCh"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="Salveaza"
+        android:backgroundTint="@color/app_color"
+        android:layout_margin="20dp"/>
+  </LinearLayout>
+</LinearLayout>
